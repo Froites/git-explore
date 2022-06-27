@@ -61,13 +61,13 @@ const Dashboard: React.FC = () => {
   return (
     <>
       <img src={logoImg} alt="GitExplore" />
-      <Title>Teste seu conhecimento com o Quiz</Title>;
+      <Title>Liste os repositórios:</Title>
 
       <Form hasError={!!inputError} onSubmit={handleAddRepository}>
         <input
           value={newRepo}
           onChange={(e) => setNewRepo(e.target.value)}
-          type="text" placeholder="Digite seu nome" />
+          type="text" placeholder="Digite o nome do seu repositório..." />
         <button type="submit">Iniciar</button>
       </Form>
 
